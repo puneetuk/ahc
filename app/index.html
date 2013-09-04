@@ -1,0 +1,207 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+<title>Advanced Health &amp; Care: Patient Demographic Information Demo</title>
+<link rel="stylesheet" type="text/css" href="css/style.css" media="all" />
+<link href='http://fonts.googleapis.com/css?family=Quattrocento|Oxygen|Cousine' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.6/jquery-ui.min.js"></script>
+<script type="text/javascript" src="js/jquery.inputfocus-0.9.min.js"></script>
+<script type="text/javascript" src="js/jquery.main.js"></script>
+</head>
+<body>
+<div id="main">
+	<div class="header"><a href="http://www.puneetudasi.com/ahc/app/"><img src="images/ahc_logo.jpg" alt="AHC Patient Demographics Application Demo" border="0" /></a></div>
+	<div class="nav"><img src="images/nav.png" alt="" border="0" /></div>
+	<div class="heading">Patient Demographic Information</div>
+	<div id="container">
+	<form action="#" method="post">
+	<!-- STEP:1 Personal details -->
+	<div id="first_step">
+	<h1>STEP 1: <span>PERSONAL DETAILS</span></h1>
+	<div class="form">
+		<input type="text" name="firstname" id="firstname" value="first name" /><label for="firstname">First Name</label>
+		<input type="text" name="lastname" id="lastname" value="last name" /><label for="lastname">Last Name</label>
+		<input type="number" name="dob" id="dob" value="date of birth" /><label for="date of birth">Date of birth (dd/mm/yyyy)</label>
+		<select id="gender" name="gender">
+			<option>please select</option>
+			<option>Male</option>
+			<option>Female</option>
+		</select>
+	<label for="gender">Gender</label>
+	<!-- clearall --><div class="clear"></div><!-- /clearall -->
+		<!-- clearall --><div class="clear"></div><!-- /clearall -->	
+		<select id="marital" name="marital">
+			<option>please select</option>
+			<option>Single</option>
+			<option>Married</option>
+			<option>Divorced</option>
+			<option>Legally seperated</option>
+			<option>Widowed</option>
+		</select>
+		<label for="marital">Marital Status</label>
+		<!-- clearall --><div class="clear"></div><!-- /clearall -->
+	</div>
+	<!-- clearall --><div class="clear"></div><!-- /clearall -->
+	<input class="submit" type="submit" name="submit_first" id="submit_first" value="" />
+	</div>
+	<!-- clearall --><div class="clear"></div><!-- /clearall -->
+	
+	
+	<!-- STEP:2 Contact details -->
+	<div id="second_step">
+	<h1>STEP 2: <span>YOUR CONTACT DETAILS</span></h1>
+	<div class="form">
+		<input type="tel" name="contact" id="contact" value="contact number" />
+		<label for="contact">Contact Number</label>
+		<input type="text" name="address1" id="address1" value="address line 1" />
+		<label for="address1">Address line 1</label>
+		<input type="text" name="address2" id="address2" value="address line 2" />
+		<label for="address2">Address line 2</label>	
+		<input type="text" name="city" id="city" value="city" />
+		<label for="city">City</label>
+		<input type="text" name="county" id="county" value="county" />
+		<label for="counrt">County</label>
+		<input type="text" name="postcode" id="postcode" value="postcode" />
+		<label for="postcode">Postcode</label>	
+		<select id="country" name="Country">
+			<option>select your country</option>
+			<option>United Kingdom</option>
+			<option>United States</option>
+			<option>Canada</option>
+			<option>India</option>
+			<option>France</option>
+			<option>Italy</option>
+			<option>Other</option>
+		</select>
+		<label for="country">Country</label>			
+		<input type="text" name="email" id="email" value="email address" />
+		<label for="email">Your email address. We send important medical notices to this address.</label>                    
+	</div>
+	<!-- clearall --><div class="clear"></div><!-- /clearall -->
+	<input class="submit" type="submit" name="submit_second" id="submit_second" value="" />
+	</div>
+	<!-- clearall --><div class="clear"></div><!-- /clearall -->
+	
+	
+	
+	<!-- STEP:3 -->
+	<!-- clearall --><div class="clear"></div><!-- /clearall -->
+	<div id="third_step">
+	
+	<h1>STEP 3: <span>PREVIOUS MEDICAL HISTORY</span></h1>
+	
+	<div class="form">
+	<select id="allergy" name="allergy">
+		<option>please select</option>
+		<option>Yes</option>
+		<option>No</option>
+	</select>
+	<label for="allergy">Do you have any allergies?</label><!-- clearall --><div class="clear"></div><!-- /clearall -->
+	<textarea id="allergy_details" class="form-textarea" name="" cols="40" rows="6"></textarea>
+	<label for="allergy_details">If yes, please give us the details</label><div class="clear"></div><!-- /clearall -->
+	<!-- clearall --><div class="clear"></div><!-- /clearall -->
+	<select id="medical_history" name="medical_history">
+		<option>please select</option>
+		<option>Yes</option>
+		<option>No</option>
+	</select>
+	<label for="medical_history">Do you have any medical history? </label>
+	<!-- clearall --><div class="clear"></div><!-- /clearall -->
+	<textarea id="medical_history_details" class="form-textarea" name="" cols="40" rows="6"></textarea>
+	<label for="medical_history_details">If yes, please give us the details</label><div class="clear"></div><!-- /clearall -->
+	<!-- clearall --><div class="clear"></div><!-- /clearall -->
+	</div>
+	<!-- clearall --><div class="clear"></div><!-- /clearall -->
+	<input class="submit" type="submit" name="submit_third" id="submit_third" value="" />
+	</div><!-- clearall --><div class="clear"></div><!-- /clearall -->
+	
+	<!-- STEP:4 -->
+	<div id="fourth_step">
+	<h1>PLEASE REVIEW YOUR <span>APPLICATION SUMMARY</span></h1>
+	<div class="form">
+	<table cellpadding="0" cellspacing="0" border="0" width="520">
+		<tr>
+			<td width="160">Name</td>
+			<td width="360"></td>
+		</tr>
+		<tr>
+			<td>Date of birth</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>Gender</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>Marital status</td>
+			<td></td>
+		</tr>		
+		<tr>
+			<td>Contact number</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>Address line 1</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>Address line 2</td>
+			<td></td>
+		</tr>
+	
+		<tr>
+			<td>City</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>County</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>Postcode</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>Country</td>
+			<td></td>
+		</tr>	
+		<tr>
+			<td>Email</td>
+			<td></td>
+		</tr>		
+		<tr>
+			<td>Any allergies</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>Any medical history</td>
+			<td></td>
+		</tr>
+	</table>
+	</div>
+	<!-- clearall --><div class="clear"></div><!-- /clearall -->
+	<input class="send submit" type="submit" name="submit_fourth" id="submit_fourth" value="" />            
+	</div>
+	</form>
+	</div>
+	<div id="progress_bar">
+	<div id="progress"></div>
+	<div id="progress_text">0% Complete</div>
+	</div>
+</div>
+<!-- Start: GA- AHC Demo Application -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-6334907-4', 'puneetudasi.com');
+  ga('send', 'pageview');
+
+</script>
+<!-- End: GA- AHC Demo Application -->
+</body>
+</html>
